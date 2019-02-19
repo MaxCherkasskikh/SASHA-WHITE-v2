@@ -1,0 +1,2001 @@
+/* ----------------------------------- THE BODY -------------------------------------- */
+
+/* ---------------------------------- THE HEADER ------------------------------------- */
+
+#reviewsContainer {
+    position: absolute;
+    height: 150%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    overflow: hidden;
+}
+
+#reviewsPictureContainer {
+    position: absolute;
+    height: 68%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    overflow: hidden;
+    background: url(IMAGES/a23.JPG);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: 0% 0%;
+    z-index: 1;
+}
+
+/* ----------------------------------- THE INFO ------------------------------------- */
+
+#reviewsInfoContainer {
+    position: absolute;
+    height: 71%;
+    width: 100%;
+    top: 29%;
+    left: %;
+    background: rgb(29, 29, 29);
+    overflow: hidden;
+    -webkit-clip-path: polygon(0 52.6%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 52.6%, 100% 0, 100% 100%, 0% 100%);
+    z-index: 10;
+}
+
+#reviewsBackgroundImage {
+    position: absolute;
+    height: 107%;
+    top: 8%;
+    left: 0%;
+}
+
+#reviewsBackgroundImageCopy {
+    position: absolute;
+    height: 107%;
+    top: 8%;
+    left: 0%;
+    opacity: 0.7;
+    animation: imageBlur 15s infinite;
+}
+
+@keyframes imageBlur {
+    0% {
+        left: 0%;
+    }
+    13.5% {
+        left: 0.5%;
+    }
+    25% {
+        left: 1%;
+    }
+    36.5% {
+        left: 0.5%;
+    }
+    50% {
+        left: 0%;
+    }
+    63.5 {
+        left: -0.5%;
+    }
+    75% {
+        left: -1%;
+    }
+    86.5% {
+        left: -0.5%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+#reviewsDivMainHeading {
+    position: absolute;
+    width: 50%;
+    top: 26%;
+    left: 50%;
+    font-weight: 600;
+    font-size: 1.7rem;
+    text-align: center;
+    animation: fontColorGradient 40s infinite;
+}
+
+#reviewsDivBorder {
+    position: absolute;
+    height: 42%;
+    width: 72%;
+    top: 41%;
+    left: 26%;
+    animation: backgroundColorGradient 40s infinite;
+    -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%, 50% 0, 50% 2%, 2% 26%, 2% 74%, 50% 98%, 98% 74%, 98% 26%, 50% 2%);
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%, 50% 0, 50% 2%, 2% 26%, 2% 74%, 50% 98%, 98% 74%, 98% 26%, 50% 2%);
+    z-index: 100;
+}
+
+#reviewsDivTopAccent {
+    position: absolute;
+    height: 12.3%;
+    width: 70%;
+    top: 38.2%;
+    left: 27%;
+    animation: backgroundColorGradient 40s infinite;
+    -webkit-clip-path: polygon(50% 0, 100% 100%, 50% 15%, 0 100%);
+    clip-path: polygon(50% 0, 100% 100%, 50% 15%, 0 100%);
+}
+
+#reviewsDivBottomAccent {
+    position: absolute;
+    height: 12.3%;
+    width: 70%;
+    top: 73.5%;
+    left: 27%;
+    animation: backgroundColorGradient 40s infinite;
+    transform: rotate(180deg);
+    -webkit-clip-path: polygon(50% 0, 100% 100%, 50% 15%, 0 100%);
+    clip-path: polygon(50% 0, 100% 100%, 50% 15%, 0 100%);
+}
+
+#reviewsDivTopButton {
+    position: absolute;
+    height: 6%;
+    width: 15%;
+    top: 33%;
+    left: 54.5%;
+    animation: backgroundColorGradient 40s infinite;
+    -webkit-clip-path: polygon(50% 0, 100% 100%, 50% 70%, 0 100%);
+    clip-path: polygon(50% 0, 100% 100%, 50% 70%, 0 100%);
+}
+
+#reviewsDivBottomButton {
+    position: absolute;
+    height: 6%;
+    width: 15%;
+    top: 85%;
+    left: 54.5%;
+    animation: backgroundColorGradient 40s infinite;
+    transform: rotate(180deg);
+    -webkit-clip-path: polygon(50% 0, 100% 100%, 50% 70%, 0 100%);
+    clip-path: polygon(50% 0, 100% 100%, 50% 70%, 0 100%);
+}
+
+#reviewsDiv {
+    position: absolute;
+    height: 44%;
+    width: 74%;
+    top: 40%;
+    left: 25%;
+    overflow: hidden;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+#reviewContainer1 {
+    position: absolute;
+    height: 88%;
+    width: 90%;
+    top: 6%;
+    left: 5%;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+    #reviewContainer1.position1 {
+        top: 6%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer1.position2 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer1.position3 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer1.position4 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer1.position5 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer1.position6 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer1.position7 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer1.position8 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer1.position9 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer1.position10 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer1.position11 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer1.position12 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer1.position13 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+#reviewContainer2 {
+    position: absolute;
+    height: 88%;
+    width: 90%;
+    top: 6%;
+    left: 5%;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+    #reviewContainer2.position1 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer2.position2 {
+        top: 6%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer2.position3 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer2.position4 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer2.position5 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer2.position6 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer2.position7 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer2.position8 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer2.position9 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer2.position10 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer2.position11 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer2.position12 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer2.position13 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+#reviewContainer3 {
+    position: absolute;
+    height: 88%;
+    width: 90%;
+    top: 6%;
+    left: 5%;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+    #reviewContainer3.position1 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer3.position2 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer3.position3 {
+        top: 6%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer3.position4 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer3.position5 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer3.position6 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer3.position7 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer3.position8 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer3.position9 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer3.position10 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer3.position11 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer3.position12 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer3.position13 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+#reviewContainer4 {
+    position: absolute;
+    height: 88%;
+    width: 90%;
+    top: 6%;
+    left: 5%;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+    #reviewContainer4.position1 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer4.position2 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer4.position3 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer4.position4 {
+        top: 6%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer4.position5 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer4.position6 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer4.position7 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer4.position8 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer4.position9 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer4.position10 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer4.position11 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer4.position12 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer4.position13 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+#reviewContainer5 {
+    position: absolute;
+    height: 88%;
+    width: 90%;
+    top: 6%;
+    left: 5%;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+    #reviewContainer5.position1 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer5.position2 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer5.position3 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer5.position4 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer5.position5 {
+        top: 6%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer5.position6 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer5.position7 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer5.position8 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer5.position9 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer5.position10 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer5.position11 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer5.position12 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer5.position13 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+#reviewContainer6 {
+    position: absolute;
+    height: 88%;
+    width: 90%;
+    top: 6%;
+    left: 5%;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+    #reviewContainer6.position1 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer6.position2 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer6.position3 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer6.position4 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer6.position5 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer6.position6 {
+        top: 6%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer6.position7 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer6.position8 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer6.position9 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer6.position10 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer6.position11 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer6.position12 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer6.position13 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+#reviewContainer7 {
+    position: absolute;
+    height: 88%;
+    width: 90%;
+    top: 6%;
+    left: 5%;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+    #reviewContainer7.position1 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer7.position2 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer7.position3 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer7.position4 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer7.position5 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer7.position6 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer7.position7 {
+        top: 6%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer7.position8 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer7.position9 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer7.position10 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer7.position11 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer7.position12 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer7.position13 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+#reviewContainer8 {
+    position: absolute;
+    height: 88%;
+    width: 90%;
+    top: 6%;
+    left: 5%;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+    #reviewContainer8.position1 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer8.position2 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer8.position3 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer8.position4 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer8.position5 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer8.position6 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer8.position7 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer8.position8 {
+        top: 6%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer8.position9 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer8.position10 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer8.position11 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer8.position12 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer8.position13 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+#reviewContainer9 {
+    position: absolute;
+    height: 88%;
+    width: 90%;
+    top: 6%;
+    left: 5%;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+    #reviewContainer9.position1 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer9.position2 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer9.position3 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer9.position4 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer9.position5 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer9.position6 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer9.position7 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer9.position8 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer9.position9 {
+        top: 6%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer9.position10 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer9.position11 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer9.position12 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer9.position13 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+#reviewContainer10 {
+    position: absolute;
+    height: 88%;
+    width: 90%;
+    top: 6%;
+    left: 5%;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+    #reviewContainer10.position1 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer10.position2 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer10.position3 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer10.position4 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer10.position5 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer10.position6 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer10.position7 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer10.position8 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer10.position9 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer10.position10 {
+        top: 6%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer10.position11 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer10.position12 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer10.position13 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+#reviewContainer11 {
+    position: absolute;
+    height: 88%;
+    width: 90%;
+    top: 6%;
+    left: 5%;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+    #reviewContainer11.position1 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer11.position2 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer11.position3 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer11.position4 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer11.position5 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer11.position6 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer11.position7 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer11.position8 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer11.position9 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer11.position10 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer11.position11 {
+        top: 6%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer11.position12 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer11.position13 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+#reviewContainer12 {
+    position: absolute;
+    height: 88%;
+    width: 90%;
+    top: 6%;
+    left: 5%;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+    #reviewContainer12.position1 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer12.position2 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer12.position3 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer12.position4 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer12.position5 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer12.position6 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer12.position7 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer12.position8 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer12.position9 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer12.position10 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer12.position11 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer12.position12 {
+        top: 6%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer12.position13 {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+#reviewContainer13 {
+    position: absolute;
+    height: 88%;
+    width: 90%;
+    top: 6%;
+    left: 5%;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+    #reviewContainer13.position1 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer13.position2 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer13.position3 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer13.position4 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer13.position5 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer13.position6 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer13.position7 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer13.position8 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer13.position9 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer13.position10 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer13.position11 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer13.position12 {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewContainer13.position13 {
+        top: 6%;
+        transition: 0.5s;
+    }
+
+.reviewNames {
+    position: absolute;
+    height: 9%;
+    width: 100%;
+    top: 16%;
+    left: 0%;
+    text-align: center;
+    padding-top: 0.5%;
+    font-size: 1.3rem;
+    text-shadow: 1.5px 1.5px 2px black;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid;
+    border-left: none;
+    border-right: none;
+    animation: fontColorGradient 40s infinite, borderColorGradient 40s infinite;
+    z-index: 10;
+}
+
+    #reviewName1.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewName1.open {
+        left: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewName2.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewName2.open {
+        left: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewName3.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewName3.open {
+        left: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewName4.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewName4.open {
+        left: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewName5.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewName5.open {
+        left: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewName6.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewName6.open {
+        left: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewName7.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewName7.open {
+        left: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewName8.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewName8.open {
+        left: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewName9.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewName9.open {
+        left: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewName10.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewName10.open {
+        left: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewName11.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewName11.open {
+        left: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewName12.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewName12.open {
+        left: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewName13.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewName13.open {
+        left: -110%;
+        transition: 0.5s;
+    }
+
+.reviewTitles {
+    position: absolute;
+    height: 8.5%;
+    width: 100%;
+    top: 74.8%;
+    left: 0%;
+    text-align: center;
+    font-size: 0.9rem;
+    text-shadow: 1.5px 1.5px 2px black;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid;
+    border-left: none;
+    border-right: none;
+    animation: fontColorGradient 40s infinite, borderColorGradient 40s infinite;
+    z-index: 10;
+}
+
+    #reviewTitle1.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle1.open {
+        left: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle2.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle2.open {
+        left: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle3.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle3.open {
+        left: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle4.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle4.open {
+        left: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle5.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle5.open {
+        left: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle6.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle6.open {
+        left: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle7.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle7.open {
+        left: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle8.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle8.open {
+        left: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle9.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle9.open {
+        left: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle10.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle10.open {
+        left: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle11.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle11.open {
+        left: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle12.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle12.open {
+        left: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle13.closed {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewTitle13.open {
+        left: 110%;
+        transition: 0.5s;
+    }
+
+
+.reviewPars {
+    position: absolute;
+    height: 50%;
+    width: 96%;
+    top: 25%;
+    left: 2%;
+    font-size: 0.8rem;
+    padding: 3%;
+    overflow-y: scroll;
+    border: 1px solid;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.1);
+    animation: fontColorGradient 40s infinite, borderColorGradient 40s infinite;
+    z-index: 0;
+}
+
+    #reviewPar1.closed {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewPar1.open {
+        top: 25%;
+        transition: 0.5s;
+    }
+
+    #reviewPar2.closed {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewPar2.open {
+        top: 25%;
+        transition: 0.5s;
+    }
+
+    #reviewPar3.closed {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewPar3.open {
+        top: 25%;
+        transition: 0.5s;
+    }
+
+    #reviewPar4.closed {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewPar4.open {
+        top: 25%;
+        transition: 0.5s;
+    }
+
+    #reviewPar5.closed {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewPar5.open {
+        top: 25%;
+        transition: 0.5s;
+    }
+
+    #reviewPar6.closed {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewPar6.open {
+        top: 25%;
+        transition: 0.5s;
+    }
+
+    #reviewPar7.closed {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewPar7.open {
+        top: 25%;
+        transition: 0.5s;
+    }
+
+    #reviewPar8.closed {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewPar8.open {
+        top: 25%;
+        transition: 0.5s;
+    }
+
+    #reviewPar9.closed {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewPar9.open {
+        top: 25%;
+        transition: 0.5s;
+    }
+
+    #reviewPar10.closed {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewPar10.open {
+        top: 25%;
+        transition: 0.5s;
+    }
+
+    #reviewPar11.closed {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewPar11.open {
+        top: 25%;
+        transition: 0.5s;
+    }
+
+    #reviewPar12.closed {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewPar12.open {
+        top: 25%;
+        transition: 0.5s;
+    }
+
+    #reviewPar13.closed {
+        top: 110%;
+        transition: 0.5s;
+    }
+
+    #reviewPar13.open {
+        top: 25%;
+        transition: 0.5s;
+    }
+
+
+.reviewImageContainers {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    overflow: hidden;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    z-index: 1;
+}
+
+    #reviewImageContainer1.closed {
+        top: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer1.open {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer2.closed {
+        top: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer2.open {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer3.closed {
+        top: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer3.open {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer4.closed {
+        top: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer4.open {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer5.closed {
+        top: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer5.open {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer6.closed {
+        top: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer6.open {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer7.closed {
+        top: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer7.open {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer8.closed {
+        top: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer8.open {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer9.closed {
+        top: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer9.open {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer10.closed {
+        top: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer10.open {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer11.closed {
+        top: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer11.open {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer12.closed {
+        top: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer12.open {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer13.closed {
+        top: 0%;
+        transition: 0.5s;
+    }
+
+    #reviewImageContainer13.open {
+        top: -110%;
+        transition: 0.5s;
+    }
+
+.reviewImageCovers {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.reviewImages {
+    position: absolute;
+}
+
+#reviewImage1 {
+    height: 180%;
+    top: 0%;
+    left: -16%;
+}
+
+#reviewImage2 {
+    height: 190%;
+    top: 0%;
+    left: -16%;
+}
+
+#reviewImage3 {
+    height: 240%;
+    top: 0%;
+    left: -87%;
+}
+
+#reviewImage4 {
+    height: 140%;
+    top: 0%;
+    left: 0%;
+}
+
+#reviewImage5 {
+    height: 160%;
+    top: 0%;
+    left: -40%;
+}
+
+#reviewImage6 {
+    height: 170%;
+    top: 0%;
+    left: -4%;
+}
+
+#reviewImage7 {
+    height: 160%;
+    top: 0%;
+    left: -25%;
+}
+
+#reviewImage8 {
+    height: 170%;
+    top: 0%;
+    left: -38%;
+}
+
+#reviewImage9 {
+    height: 320%;
+    top: 0%;
+    left: -58%;
+}
+
+#reviewImage10 {
+    height: 140%;
+    top: 0%;
+    left: -21%;
+}
+
+#reviewImage11 {
+    height: 160%;
+    top: 0%;
+    left: -35%;
+}
+
+#reviewImage12 {
+    height: 160%;
+    top: 0%;
+    left: -5%;
+}
+
+#reviewImage13 {
+    height: 180%;
+    top: -34%;
+    left: -10%;
+}
+
+.reviewButtonContainers {
+    position: absolute;
+    height: 13%;
+    width: 15%;
+    top: 84.5%;
+    left: 42.5%;
+    border-radius: 100%;
+    border: 1px solid;
+    background: rgba(255, 255, 255, 0.2);
+    animation: borderColorGradient 40s infinite;
+    z-index: 1000;
+}
+
+    #reviewButtonContainer1.closed {
+        transform: rotate(0deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer1.open {
+        transform: rotate(180deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer2.closed {
+        transform: rotate(0deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer2.open {
+        transform: rotate(180deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer3.closed {
+        transform: rotate(0deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer3.open {
+        transform: rotate(180deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer4.closed {
+        transform: rotate(0deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer4.open {
+        transform: rotate(180deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer5.closed {
+        transform: rotate(0deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer5.open {
+        transform: rotate(180deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer6.closed {
+        transform: rotate(0deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer6.open {
+        transform: rotate(180deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer7.closed {
+        transform: rotate(0deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer7.open {
+        transform: rotate(180deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer8.closed {
+        transform: rotate(0deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer8.open {
+        transform: rotate(180deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer9.closed {
+        transform: rotate(0deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer9.open {
+        transform: rotate(180deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer10.closed {
+        transform: rotate(0deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer10.open {
+        transform: rotate(180deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer11.closed {
+        transform: rotate(0deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer11.open {
+        transform: rotate(180deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer12.closed {
+        transform: rotate(0deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer12.open {
+        transform: rotate(180deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer13.closed {
+        transform: rotate(0deg);
+        transition: 0.5s;
+    }
+
+    #reviewButtonContainer13.open {
+        transform: rotate(180deg);
+        transition: 0.5s;
+    }
+
+.reviewOpenCloseButtons {
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    top: 3%;
+    left: 10%;
+    animation: backgroundColorGradient 40s infinite;
+    -webkit-clip-path: polygon(50% 0, 100% 100%, 50% 70%, 0 100%);
+    clip-path: polygon(50% 0, 100% 100%, 50% 70%, 0 100%);
+    z-index: 1000;
+}
+
+/* ------------------------------------ THE END -------------------------------------- */
+
+@media only screen and (orientation: landscape) {
+    #reviewsContainer {
+        height: 500%;
+    }
+    
+    #reviewsPictureContainer {
+        position: absolute;
+        background-size: 100% 260%;
+        background-position: 0% 44%;
+    }
+    
+    #reviewsDivMainHeading {
+        font-size: 3rem;
+    }
+    
+    .reviewNames {
+        padding-top: 1.6%;
+        font-size: 1.6rem;
+    }
+    
+    .reviewTitles {
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,172 @@
+/* ----------------------------------- THE BODY -------------------------------------- */
+
+/* ---------------------------------- THE HEADER ------------------------------------- */
+
+#contactContainer {
+    position: absolute;
+    height: 150%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    overflow: hidden;
+}
+
+#contactPictureContainer {
+    position: absolute;
+    height: 68%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    overflow: hidden;
+    background: url(IMAGES/a32.jpg);
+    background-attachment: fixed;
+    background-size: 123%;
+    background-position: 0% 0%;
+    z-index: 1;
+}
+
+/* ----------------------------------- THE INFO ------------------------------------- */
+
+#contactInfoContainer {
+    position: absolute;
+    height: 71%;
+    width: 100%;
+    top: 29%;
+    left: %;
+    background: rgb(29, 29, 29);
+    overflow: hidden;
+    -webkit-clip-path: polygon(0 52.6%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 52.6%, 100% 0, 100% 100%, 0% 100%);
+    z-index: 10;
+}
+
+#sashaPeaceOutImage {
+    position: absolute;
+    height: 70%;
+    top: 59%;
+    z-index: 1;
+}
+
+#contactFormContainer {
+    position: absolute;
+    height: 50%;
+    width: 70%;
+    top: 30%;
+    left: 29%;
+    z-index: 2;
+}
+
+#formContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+#contactMainHeading {
+    position: absolute;
+    height: 9%;
+    width: 70%;
+    top: 1%;
+    left: 25%;
+    text-align: center;
+    font-size: 1.4rem;
+    animation: fontColorGradient 40s infinite;
+}
+
+#contactMainPar {
+    position: absolute;
+    height: 14%;
+    width: 100%;
+    top: 15%;
+    left: 0%;
+    text-align: center;
+    animation: fontColorGradient 40s infinite;
+}
+
+#contactNameInput {
+    position: absolute;
+    height: 8%;
+    width: 90%;
+    top: 32%;
+    left: 5%;
+    background: none;
+    border-radius: 5px;
+    animation: borderColorGradient 40s infinite;
+}
+
+#contactEmailInput {
+    position: absolute;
+    height: 8%;
+    width: 90%;
+    top: 42%;
+    left: 5%;
+    background: none;
+    border-radius: 5px;
+    animation: borderColorGradient 40s infinite;
+}
+
+#contactSubjectInput {
+    position: absolute;
+    height: 8%;
+    width: 90%;
+    top: 52%;
+    left: 5%;
+    background: none;
+    border-radius: 5px;
+    animation: borderColorGradient 40s infinite;
+}
+
+#contactMessageInput {
+    position: absolute;
+    height: 20%;
+    width: 90%;
+    top: 63%;
+    left: 5%;
+    background: none;
+    border-radius: 5px;
+    animation: borderColorGradient 40s infinite;
+}
+
+#contactSubmitButton {
+    position: absolute;
+    height: 11%;
+    width: 50%;
+    top: 86%;
+    left: 45%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 1.5px 1.5px 2px white;
+    box-shadow: 1.3px 1.3px 5px white;
+    border: 1px solid;
+    animation: borderColorGradient 40s infinite, fontColorGradient 40s infinite, backgroundColorGradient 40s infinite;
+}
+
+/* ------------------------------------ THE END -------------------------------------- */
+
+@media only screen and (orientation: landscape) {
+    #contactContainer {
+        height: 500%;
+    }
+    
+    #contactPictureContainer {
+        position: absolute;
+        background-size: 100%;
+        background-position: 0% 45%;
+    }
+    
+    #contactMainHeading {
+        font-size: 3rem;
+    }
+    
+    #contactMainPar {
+        top: 18%;
+        font-size: 1.3rem;
+    }
+    
+    #contactSubmitButton {
+        font-size: 3rem;
+    }
+}

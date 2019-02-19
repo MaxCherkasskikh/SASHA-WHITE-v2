@@ -1,0 +1,372 @@
+/* ----------------------------------- THE BODY -------------------------------------- */
+
+/* ---------------------------------- THE HEADER ------------------------------------- */
+
+#askContainer {
+    position: absolute;
+    height: 150%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    overflow: hidden;
+}
+
+#askPictureContainer {
+    position: absolute;
+    height: 68%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    overflow: hidden;
+    background: url(IMAGES/a31.JPG);
+    background-attachment: fixed;
+    background-size: 121%;
+    background-position: 40% 10%;
+    z-index: 1;
+}
+
+/* ----------------------------------- THE INFO ------------------------------------- */
+
+#askInfoContainer {
+    position: absolute;
+    height: 71%;
+    width: 100%;
+    top: 29%;
+    left: %;
+    background: rgb(29, 29, 29);
+    overflow: hidden;
+    -webkit-clip-path: polygon(0 52.6%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 52.6%, 100% 0, 100% 100%, 0% 100%);
+    z-index: 10;
+}
+
+#askSashaImage {
+    position: absolute;
+    height: 100%;
+    top: 33%;
+    left: 0%;
+}
+
+#rippleContainer1 {
+    position: absolute;
+    height: 8%;
+    width: 15%;
+    top: 81.4%;
+    left: 43%;
+    transform: rotateX(71deg);
+}
+
+#rippleDiv1 {
+    position: absolute;
+    height: 5%;
+    width: 5%;
+    top: 47.5%;
+    left: 47.5%;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    animation: waterRipple1 5.1s linear infinite;
+    animation-delay: 0s;
+    z-index: 100;
+}
+
+@keyframes waterRipple1 {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5), 0 0 0 0 rgba(0, 0, 0, 0.5);
+    }
+    400% {
+        box-shadow: 0 0 0 50px rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0.5);
+    }
+    80% {
+        box-shadow: 0 0 0 50px rgba(0, 0, 0, 0), 0 0 0 30px rgba(0, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 30px rgba(0, 0, 0, 0);
+    }
+}
+
+#rippleContainer2 {
+    position: absolute;
+    height: 8%;
+    width: 15%;
+    top: 79%;
+    left: 14%;
+    transform: rotateX(74deg);
+}
+
+#rippleDiv2 {
+    position: absolute;
+    height: 5%;
+    width: 5%;
+    top: 47.5%;
+    left: 47.5%;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    animation: waterRipple2 3.8s linear infinite;
+    animation-delay: 1.2s;
+    z-index: 100;
+}
+
+@keyframes waterRipple2 {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5), 0 0 0 0 rgba(0, 0, 0, 0.5);
+    }
+    400% {
+        box-shadow: 0 0 0 50px rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0.5);
+    }
+    80% {
+        box-shadow: 0 0 0 50px rgba(0, 0, 0, 0), 0 0 0 30px rgba(0, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 30px rgba(0, 0, 0, 0);
+    }
+}
+
+#rippleContainer3 {
+    position: absolute;
+    height: 8%;
+    width: 15%;
+    top: 88%;
+    left: 70%;
+    transform: rotateX(70deg);
+}
+
+#rippleDiv3 {
+    position: absolute;
+    height: 5%;
+    width: 5%;
+    top: 47.5%;
+    left: 47.5%;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    animation: waterRipple3 4.6s linear infinite;
+    animation-delay: 0.5s;
+    z-index: 100;
+}
+
+@keyframes waterRipple3 {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5), 0 0 0 0 rgba(0, 0, 0, 0.5);
+    }
+    400% {
+        box-shadow: 0 0 0 50px rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0.5);
+    }
+    80% {
+        box-shadow: 0 0 0 50px rgba(0, 0, 0, 0), 0 0 0 30px rgba(0, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 30px rgba(0, 0, 0, 0);
+    }
+}
+
+#rippleContainer4 {
+    position: absolute;
+    height: 8%;
+    width: 15%;
+    top: 87%;
+    left: 7%;
+    transform: rotateX(68deg);
+}
+
+#rippleDiv4 {
+    position: absolute;
+    height: 5%;
+    width: 5%;
+    top: 47.5%;
+    left: 47.5%;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    animation: waterRipple4 4.8s linear infinite;
+    animation-delay: 3s;
+    z-index: 100;
+}
+
+@keyframes waterRipple4 {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5), 0 0 0 0 rgba(0, 0, 0, 0.5);
+    }
+    400% {
+        box-shadow: 0 0 0 50px rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0.5);
+    }
+    80% {
+        box-shadow: 0 0 0 50px rgba(0, 0, 0, 0), 0 0 0 30px rgba(0, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 30px rgba(0, 0, 0, 0);
+    }
+}
+
+#rippleContainer5 {
+    position: absolute;
+    height: 8%;
+    width: 15%;
+    top: 79%;
+    left: 70%;
+    transform: rotateX(78deg);
+}
+
+#rippleDiv5 {
+    position: absolute;
+    height: 5%;
+    width: 5%;
+    top: 47.5%;
+    left: 47.5%;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    animation: waterRipple5 4.2s linear infinite;
+    animation-delay: 5s;
+    z-index: 100;
+}
+
+@keyframes waterRipple5 {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5), 0 0 0 0 rgba(0, 0, 0, 0.5);
+    }
+    400% {
+        box-shadow: 0 0 0 50px rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0.5);
+    }
+    80% {
+        box-shadow: 0 0 0 50px rgba(0, 0, 0, 0), 0 0 0 30px rgba(0, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 30px rgba(0, 0, 0, 0);
+    }
+}
+
+#askSashaContainer {
+    position: absolute;
+    height: 50%;
+    width: 70%;
+    top: 32%;
+    left: 28%;
+}
+
+#askSashaMainHeading {
+    position: absolute;
+    height: 9%;
+    width: 70%;
+    top: 2%;
+    left: 25%;
+    text-align: center;
+    font-size: 1.6rem;
+    animation: fontColorGradient 40s infinite;
+}
+
+#askSashaMainPar {
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    top: 14%;
+    left: 0%;
+    text-align: center;
+    font-size: 0.8rem;
+    animation: fontColorGradient 40s infinite;
+}
+
+#askSashaFormContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+#askSashaNameInput {
+    position: absolute;
+    height: 8%;
+    width: 46%;
+    top: 41%;
+    left: 2%;
+    background: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    animation: borderColorGradient 40s infinite;
+}
+
+#askSashaEmailInput {
+    position: absolute;
+    height: 8%;
+    width: 46%;
+    top: 41%;
+    left: 52%;
+    background: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    animation: borderColorGradient 40s infinite;
+}
+
+#askSashaPhoneNumberInput {
+    position: absolute;
+    height: 8%;
+    width: 46%;
+    top: 52%;
+    left: 2%;
+    background: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    animation: borderColorGradient 40s infinite;
+}
+
+#askSashaSubjectInput {
+    position: absolute;
+    height: 8%;
+    width: 46%;
+    top: 52%;
+    left: 52%;
+    background: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    animation: borderColorGradient 40s infinite;
+}
+
+#askSashaMessageInput {
+    position: absolute;
+    height: 20%;
+    width: 96%;
+    top: 63%;
+    left: 2%;
+    background: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    animation: borderColorGradient 40s infinite;
+}
+
+#askSubmitButton {
+    position: absolute;
+    height: 11%;
+    width: 50%;
+    top: 86%;
+    left: 45%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 1.5px 1.5px 2px white;
+    box-shadow: 1.3px 1.3px 5px white;
+    border: 1px solid;
+    animation: borderColorGradient 40s infinite, fontColorGradient 40s infinite, backgroundColorGradient 40s infinite;
+}
+
+/* ------------------------------------ THE END -------------------------------------- */
+
+@media only screen and (orientation: landscape) {
+    #askContainer {
+        height: 500%;
+    }
+    
+    #askPictureContainer {
+        position: absolute;
+        background-size: 100%;
+        background-position: 0% 40%;
+    }
+    
+    #askSashaMainHeading {
+        font-size: 2rem;
+    }
+    
+    #askSashaMainPar {
+        font-size: 1.5rem;
+    }
+    
+    #askSubmitButton {
+        font-size: 3rem;
+    }
+}

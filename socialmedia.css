@@ -1,0 +1,166 @@
+/* ----------------------------------- THE BODY -------------------------------------- */
+
+/* ---------------------------------- THE HEADER ------------------------------------- */
+
+#socialMediaContainer {
+    position: absolute;
+    height: 150%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    overflow: hidden;
+}
+
+#socialMediaPictureContainer {
+    position: absolute;
+    height: 68%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    overflow: hidden;
+    background: url(IMAGES/a9.jpg);
+    background-attachment: fixed;
+    background-size: 120%;
+    background-position: 60% 0%;
+    z-index: 1;
+}
+
+/* ----------------------------------- THE INFO ------------------------------------- */
+
+#socialMediaInfoContainer {
+    position: absolute;
+    height: 71%;
+    width: 100%;
+    top: 29%;
+    left: %;
+    background: rgb(29, 29, 29);
+    overflow: hidden;
+    -webkit-clip-path: polygon(0 52.6%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 52.6%, 100% 0, 100% 100%, 0% 100%);
+    z-index: 10;
+}
+
+#socialMediaImage {
+    position: absolute;
+    height: 102%;
+    top: 17%;
+    left: -1%;
+}
+
+#rippleContainer6 {
+    position: absolute;
+    height: 33%;
+    width: 65.6%;
+    top: 65.8%;
+    left: 20.9%;
+    z-index: 1;
+}
+
+#rippleDiv6 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0);
+    animation: waterRipple6 5s linear infinite;
+    z-index: 1;
+}
+
+@keyframes waterRipple6 {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3), 0 0 0 0 rgba(255, 255, 255, 0.3);
+    }
+    400% {
+        box-shadow: 0 0 0 50px rgba(255, 255, 255, 0), 0 0 0 0 rgba(255, 255, 255, 0.3);
+    }
+    80% {
+        box-shadow: 0 0 0 50px rgba(255, 255, 255, 0), 0 0 0 30px rgba(255, 255, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0), 0 0 0 30px rgba(255, 255, 255, 0);
+    }
+}
+
+#socialMediaDiv {
+    position: absolute;
+    height: 30%;
+    width: 80%;
+    top: 38%;
+    left: 18%;
+    z-index: 1000;
+}
+
+#socialMediaMainHeading {
+    position: absolute;
+    height: 9%;
+    width: 70%;
+    top: 2%;
+    left: 25%;
+    text-align: center;
+    font-size: 1.6rem;
+    animation: fontColorGradient 40s infinite;
+}
+
+#socialMediaMainPar {
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    top: 22%;
+    left: 0%;
+    text-align: center;
+    font-size: 0.9rem;
+    animation: fontColorGradient 40s infinite;
+}
+
+#facebookIcon {
+    position: absolute;
+    height: 34%;
+    top: 56%;
+    left: 7%;
+    z-index: 1000;
+}
+
+#instagramIcon {
+    position: absolute;
+    height: 34%;
+    top: 56%;
+    left: 39%;
+    z-index: 1000;
+}
+
+#youtubeIcon {
+    position: absolute;
+    height: 34%;
+    top: 56%;
+    left: 70%;
+    z-index: 1000;
+}
+
+/* ------------------------------------ THE END -------------------------------------- */
+
+@media only screen and (orientation: landscape) {
+    #socialMediaContainer {
+        height: 500%;
+    }
+    
+    #socialMediaPictureContainer {
+        position: absolute;
+        background-size: 100%;
+        background-position: 0% 50%;
+    }
+    
+    #socialMediaMainHeading {
+        font-size: 3rem;
+    }
+    
+    #socialMediaMainPar {
+        font-size: 1.6rem;
+    }
+    
+    #rippleContainer6 {
+        width: 69%;
+        left: 22%;
+    }
+}

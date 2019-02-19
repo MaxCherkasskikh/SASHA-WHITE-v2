@@ -1,0 +1,305 @@
+/* ----------------------------------- THE BODY -------------------------------------- */
+
+/* ---------------------------------- THE HEADER ------------------------------------- */
+
+#reelContainer {
+    position: absolute;
+    height: 150%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    overflow: hidden;
+}
+
+#reelPictureContainer {
+    position: absolute;
+    height: 68%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    overflow: hidden;
+    background: url(IMAGES/a4.JPG);
+    background-attachment: fixed;
+    background-size: 115%;
+    background-position: 80% 0%;
+    z-index: 1;
+}
+
+/* ----------------------------------- THE INFO ------------------------------------- */
+
+#reelInfoContainer {
+    position: absolute;
+    height: 71%;
+    width: 100%;
+    top: 29%;
+    left: %;
+    background: rgb(29, 29, 29);
+    overflow: hidden;
+    -webkit-clip-path: polygon(0 52.6%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 52.6%, 100% 0, 100% 100%, 0% 100%);
+    z-index: 10;
+}
+
+#reelPicture {
+    position: absolute;
+    height: 70%;
+    top: 34%;
+    left: -2.4%;
+    animation: imageTilt 25s linear infinite;
+}
+
+@keyframes imageTilt {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-3deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(3deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#reelMainHeading {
+    position: absolute;
+    height: 5%;
+    width: 50%;
+    top: 30%;
+    left: 45%;
+    text-align: center;
+    font-size: 1.8rem;
+    animation: fontColorGradient 40s infinite;
+}
+
+#pictureReelContainer {
+    position: absolute;
+    height: 35%;
+    width: 66.3%;
+    top: 46%;
+    left: 17%;
+    transform: rotate(45deg);
+    animation: containerTilt 25s linear infinite;
+    z-index: 700;
+}
+
+@keyframes containerTilt {
+    0% {
+        transform: rotate(45deg);
+    }
+    25% {
+        transform: rotate(42deg);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    75% {
+        transform: rotate(48deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+.reelPictureDivs {
+    position: absolute;
+    height: 23.5%;
+    width: 23.5%;
+    border: 0.5px solid;
+    border-radius: 4px;
+    overflow: hidden;
+    animation: borderColorGradient 40s infinite;
+}
+
+    #pictureDiv1 {
+        top: 1%;
+        left: 1%;
+    }
+
+    #pictureDiv2 {
+        top: 1%;
+        left: 26%;
+    }
+
+    #pictureDiv3 {
+        top: 1%;
+        left: 51%;
+    }
+
+    #pictureDiv4 {
+        top: 1%;
+        left: 76%;
+    }
+
+    #pictureDiv5 {
+        top: 26%;
+        left: 1%;
+    }
+
+    #pictureDiv6 {
+        top: 26%;
+        left: 26%;
+    }
+
+    #pictureDiv7 {
+        top: 26%;
+        left: 51%;
+    }
+
+    #pictureDiv8 {
+        top: 26%;
+        left: 76%;
+    }
+
+    #pictureDiv9 {
+        top: 51%;
+        left: 1%;
+    }
+
+    #pictureDiv10 {
+        top: 51%;
+        left: 26%;
+    }
+
+    #pictureDiv11 {
+        top: 51%;
+        left: 51%;
+    }
+
+    #pictureDiv12 {
+        top: 51%;
+        left: 76%;
+    }
+
+    #pictureDiv13 {
+        top: 76%;
+        left: 1%;
+    }
+
+    #pictureDiv14 {
+        top: 76%;
+        left: 26%;
+    }
+
+    #pictureDiv15 {
+        top: 76%;
+        left: 51%;
+    }
+
+    #pictureDiv16 {
+        top: 76%;
+        left: 76%;
+    }
+
+.reelPictures {
+    position: absolute;
+    height: 200%;
+    transform: rotate(-45deg);
+}
+
+    #reelPic1 {
+        top: -34%;
+        left: 0%;
+    }
+
+    #reelPic2 {
+        top: -7%;
+        left: -120%;
+    }
+
+    #reelPic3 {
+        top: -70%;
+        left: -50%;
+    }
+
+    #reelPic4 {
+        top: -13%;
+        left: -100%;
+    }
+
+    #reelPic5 {
+        top: -30%;
+        left: -70%;
+    }
+
+    #reelPic6 {
+        top: -40%;
+        left: %;
+    }
+
+    #reelPic7 {
+        top: %;
+        left: -100%;
+    }
+
+    #reelPic8 {
+        top: -30%;
+        left: 0%;
+    }
+
+    #reelPic9 {
+        top: -40%;
+        left: 0%;
+    }
+
+    #reelPic10 {
+        top: -33%;
+        left: 0%;
+    }
+
+    #reelPic11 {
+        top: -40%;
+        left: 0%;
+    }
+
+    #reelPic12 {
+        top: -30%;
+        left: 0%;
+    }
+
+    #reelPic13 {
+        top: -40%;
+        left: -78%;
+    }
+
+    #reelPic14 {
+        top: -50%;
+        left: -30%;
+    }
+
+    #reelPic15 {
+        top: -25%;
+        left: -15%;
+    }
+
+    #reelPic16 {
+        top: -30%;
+        left: 0%;
+    }
+
+/* ------------------------------------ THE END -------------------------------------- */
+
+@media only screen and (orientation: landscape) {
+    #reelContainer {
+        height: 500%;
+    }
+    
+    #reelPictureContainer {
+        position: absolute;
+        background-size: 100%;
+        background-position: 0% 40%;
+    }
+    
+    #reelMainHeading {
+        font-size: 3rem;
+    }
+    
+    #reelPicture {
+        left: -6%;
+    }
+}
