@@ -30,6 +30,8 @@
         
         <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
         
+        <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
+        
         <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps" rel="stylesheet">
         
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -120,27 +122,69 @@
                 
                 <div id="askSashaContainer">
 
-                    <h1 id="askSashaMainHeading">ASK SASHA</h1>
+                    <a id="askSashaButton">ASK SASHA</a>
+                    
+                    <a id="talentSignUpButton">TALENT SIGNUP</a>
+                    
+                    <span id="askTalentHeadingUnderline" class="ask"></span>
 
-                    <p id="askSashaMainPar">To ask Sasha only one question please fill out this form and click submit. Sasha will look at the message and contact you directly for further conversation.</p>
+                    <p id="askSashaMainPar" class="ask">A GIFT FOR YOU! You can ask Sasha any one question for FREE! Just one, so think for a minute before sending in the question.</p>
+                    
+                    <p id="askSashaSecondaryPar" class="ask">If you are an artist, businessman/businesswoman, or any kind of a professional... Leave your info so I can help other people find you.</p>
 
                     <form id="askSashaFormContainer" class="contact-form" action="contacthandlerOTHER.php" method="post">
+                            
+                        <div id="rantContainer" class="ask">
 
-                        <input id="askSashaNameInput" name="rantname" placeholder="Your Name">
+                            <input id="askSashaNameInput" name="rantname" placeholder="Your Name">
 
-                        <input id="askSashaEmailInput" name="rantmail" placeholder="Your Email">
+                            <input id="askSashaEmailInput" name="rantmail" placeholder="Your Email">
 
-                        <input id="askSashaPhoneNumberInput" name="rantphonenumber" placeholder="Your Phone Number">
+                            <input id="askSashaPhoneNumberInput" name="rantphonenumber" placeholder="Your Phone Number">
 
-                        <input id="askSashaSubjectInput" name="rantsubject" placeholder="Your Subject">
+                            <input id="askSashaSubjectInput" name="rantsubject" placeholder="Your Subject">
 
-                        <input id="askSashaMessageInput" name="rantmessage" placeholder="Your Message"></input>
+                            <input id="askSashaMessageInput" name="rantmessage" placeholder="Your Message"></input>
+                            
+                            <button id="askSubmitContainerButton" type="submit" name="rantsubmit">
 
-                        <button type="submit" name="rantsubmit">
+                                <a id="askSubmitButton">SEND</a>
 
-                            <a id="askSubmitButton">SEND</a>
+                            </button>
+                            
+                        </div>
+                        
+                    </form>
+                       
+                    <form id="talentFormContainer" class="contact-form" action="contacthandlerTHIRD.php" method="post">
+                        
+                        <div id="talentContainer" class="ask">
+                            
+                            <input id="talentFirstNameInput" name="talentfirstname" placeholder="Your First Name">
 
-                        </button>
+                            <input id="talentLastNameInput" name="talentlastname" placeholder="Your Last Email">
+
+                            <input id="talentBirthDayInput" name="talentbirthday" placeholder="Your Birth Date">
+
+                            <input id="talentBirthTimeInput" name="talentbirthtime" placeholder="Your Birth Time">
+                            
+                            <input id="talentBirthPlaceInput" name="talentbirthplace" placeholder="Your Birth Place">
+
+                            <input id="talentEmailInput" name="talentmail" placeholder="Your Email">
+
+                            <input id="talentPhoneNumberInput" name="talentphonenumber" placeholder="Your Phone Number">
+
+                            <input id="talentSocialMediaInput" name="talentsocialmedia" placeholder="Your Social Media">
+                            
+                            <input id="talentMessageInput" name="talentmessage" placeholder="A Short Message About Yourself">
+                            
+                            <button id="talentSubmitContainerButton" type="submit" name="talentsubmit">
+
+                                <a id="talentSubmitButton">SEND</a>
+
+                            </button>
+                            
+                        </div>
 
                     </form>
                     

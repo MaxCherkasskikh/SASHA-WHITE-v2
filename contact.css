@@ -15,13 +15,14 @@
     position: absolute;
     height: 68%;
     width: 100%;
-    top: 0%;
+    top: -2%;
     left: 0%;
     overflow: hidden;
-    background: url(IMAGES/a32.jpg);
+    background: url(IMAGES/a32.JPG);
     background-attachment: fixed;
     background-size: 123%;
     background-position: 0% 0%;
+    backface-visibility: hidden;
     z-index: 1;
 }
 
@@ -42,8 +43,9 @@
 
 #sashaPeaceOutImage {
     position: absolute;
-    height: 70%;
-    top: 59%;
+    height: 80%;
+    width: 100%;
+    top: 52%;
     z-index: 1;
 }
 
@@ -91,6 +93,7 @@
     width: 90%;
     top: 32%;
     left: 5%;
+    font-size: 0.9rem;
     background: none;
     border-radius: 5px;
     animation: borderColorGradient 40s infinite;
@@ -102,6 +105,7 @@
     width: 90%;
     top: 42%;
     left: 5%;
+    font-size: 0.9rem;
     background: none;
     border-radius: 5px;
     animation: borderColorGradient 40s infinite;
@@ -113,6 +117,7 @@
     width: 90%;
     top: 52%;
     left: 5%;
+    font-size: 0.9rem;
     background: none;
     border-radius: 5px;
     animation: borderColorGradient 40s infinite;
@@ -124,14 +129,20 @@
     width: 90%;
     top: 63%;
     left: 5%;
+    font-size: 0.9rem;
     background: none;
     border-radius: 5px;
     animation: borderColorGradient 40s infinite;
 }
 
+#contactSubmitContainerButton {
+    background: none;
+    border: none;
+}
+
 #contactSubmitButton {
     position: absolute;
-    height: 11%;
+    height: 12%;
     width: 50%;
     top: 86%;
     left: 45%;

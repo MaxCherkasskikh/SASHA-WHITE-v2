@@ -15,13 +15,14 @@
     position: absolute;
     height: 68%;
     width: 100%;
-    top: 0%;
+    top: -2%;
     left: 0%;
     overflow: hidden;
     background: url(IMAGES/a31.JPG);
     background-attachment: fixed;
-    background-size: 121%;
+    background-size: 111%;
     background-position: 40% 10%;
+    backface-visibility: hidden;
     z-index: 1;
 }
 
@@ -43,6 +44,7 @@
 #askSashaImage {
     position: absolute;
     height: 100%;
+    width: 100%;
     top: 33%;
     left: 0%;
 }
@@ -240,15 +242,51 @@
     left: 28%;
 }
 
-#askSashaMainHeading {
+#askSashaButton {
     position: absolute;
     height: 9%;
-    width: 70%;
+    width: 35%;
     top: 2%;
-    left: 25%;
+    left: 18%;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     animation: fontColorGradient 40s infinite;
+    z-index: 1000;
+}
+
+#talentSignUpButton {
+    position: absolute;
+    height: 9%;
+    width: 46%;
+    top: 2%;
+    left: 54%;
+    text-align: center;
+    font-size: 1.1rem;
+    animation: fontColorGradient 40s infinite;
+    z-index: 1000;
+}
+
+#askTalentHeadingUnderline {
+    position: absolute;
+    height: 0.5%;
+    width: 35%;
+    top: 10%;
+    left: 18%;
+    border: 1px solid;
+    animation: borderColorGradient 40s infinite;
+    z-index: 1;
+}
+
+#askTalentHeadingUnderline.ask {
+    width: 35%;
+    left: 18%;
+    transition: 0.5s;
+}
+
+#askTalentHeadingUnderline.signup {
+    width: 44%;
+    left: 55%;
+    transition: 0.5s;
 }
 
 #askSashaMainPar {
@@ -262,12 +300,61 @@
     animation: fontColorGradient 40s infinite;
 }
 
+#askSashaMainPar.ask {
+    left: 0%;
+    transition: 0.5s;
+}
+
+#askSashaMainPar.signup {
+    left: -200%;
+    transition: 0.5s;
+}
+
+#askSashaSecondaryPar {
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    top: 14%;
+    left: 110%;
+    text-align: center;
+    font-size: 0.7rem;
+    animation: fontColorGradient 40s infinite;
+}
+
+#askSashaSecondaryPar.ask {
+    left: 110%;
+    transition: 0.5s;
+}
+
+#askSashaSecondaryPar.signup {
+    left: 0%;
+    transition: 0.5s;
+}
+
 #askSashaFormContainer {
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0%;
     left: 0%;
+}
+
+#rantContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -4%;
+    left: 0%;
+}
+
+#rantContainer.ask {
+    left: 0%;
+    transition: 0.5s;
+}
+
+#rantContainer.signup {
+    left: -200%;
+    transition: 0.5s;
 }
 
 #askSashaNameInput {
@@ -330,9 +417,160 @@
     animation: borderColorGradient 40s infinite;
 }
 
+#askSubmitContainerButton {
+    border: none;
+    background: none;
+}
+
 #askSubmitButton {
     position: absolute;
-    height: 11%;
+    height: 12%;
+    width: 50%;
+    top: 86%;
+    left: 45%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 1.5px 1.5px 2px white;
+    box-shadow: 1.3px 1.3px 5px white;
+    border: 1px solid;
+    animation: borderColorGradient 40s infinite, fontColorGradient 40s infinite, backgroundColorGradient 40s infinite;
+}
+
+#talentContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 110%;
+}
+
+#talentContainer.ask {
+    left: 110%;
+    transition: 0.5s;
+}
+
+#talentContainer.signup {
+    left: 0%;
+    transition: 0.5s;
+}
+
+#talentFirstNameInput {
+    position: absolute;
+    height: 8%;
+    width: 46%;
+    top: 31%;
+    left: 2%;
+    background: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    animation: borderColorGradient 40s infinite;
+}
+
+#talentLastNameInput {
+    position: absolute;
+    height: 8%;
+    width: 46%;
+    top: 31%;
+    left: 52%;
+    background: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    animation: borderColorGradient 40s infinite;
+}
+
+#talentBirthDayInput {
+    position: absolute;
+    height: 8%;
+    width: 46%;
+    top: 40%;
+    left: 2%;
+    background: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    animation: borderColorGradient 40s infinite;
+}
+
+#talentBirthTimeInput {
+    position: absolute;
+    height: 8%;
+    width: 46%;
+    top: 40%;
+    left: 52%;
+    background: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    animation: borderColorGradient 40s infinite;
+}
+
+#talentBirthPlaceInput {
+    position: absolute;
+    height: 8%;
+    width: 46%;
+    top: 49%;
+    left: 2%;
+    background: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    animation: borderColorGradient 40s infinite;
+}
+
+#talentEmailInput {
+    position: absolute;
+    height: 8%;
+    width: 46%;
+    top: 49%;
+    left: 52%;
+    background: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    animation: borderColorGradient 40s infinite;
+}
+
+#talentPhoneNumberInput {
+    position: absolute;
+    height: 8%;
+    width: 46%;
+    top: 58%;
+    left: 2%;
+    background: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    animation: borderColorGradient 40s infinite;
+}
+
+#talentSocialMediaInput {
+    position: absolute;
+    height: 8%;
+    width: 46%;
+    top: 58%;
+    left: 52%;
+    background: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    animation: borderColorGradient 40s infinite;
+}
+
+#talentMessageInput {
+    position: absolute;
+    height: 16%;
+    width: 96%;
+    top: 67%;
+    left: 2%;
+    background: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    animation: borderColorGradient 40s infinite;
+}
+
+#talentSubmitContainerButton {
+    border: none;
+    background: none;
+}
+
+#talentSubmitButton {
+    position: absolute;
+    height: 12%;
     width: 50%;
     top: 86%;
     left: 45%;
@@ -358,7 +596,11 @@
         background-position: 0% 40%;
     }
     
-    #askSashaMainHeading {
+    #askSashaButton {
+        font-size: 2rem;
+    }
+    
+    #talentSignUpButton {
         font-size: 2rem;
     }
     
@@ -366,7 +608,15 @@
         font-size: 1.5rem;
     }
     
+    #askSashaSecondaryPar {
+        font-size: 1.4rem;
+    }
+    
     #askSubmitButton {
+        font-size: 3rem;
+    }
+    
+    #talentSubmitButton {
         font-size: 3rem;
     }
 }

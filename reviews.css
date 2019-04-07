@@ -15,13 +15,14 @@
     position: absolute;
     height: 68%;
     width: 100%;
-    top: 0%;
+    top: -2%;
     left: 0%;
     overflow: hidden;
     background: url(IMAGES/a23.JPG);
     background-attachment: fixed;
     background-size: 100%;
     background-position: 0% 0%;
+    backface-visibility: hidden;
     z-index: 1;
 }
 
@@ -43,6 +44,7 @@
 #reviewsBackgroundImage {
     position: absolute;
     height: 107%;
+    width: 100%;
     top: 8%;
     left: 0%;
 }
@@ -50,10 +52,11 @@
 #reviewsBackgroundImageCopy {
     position: absolute;
     height: 107%;
+    width: 100%;
     top: 8%;
     left: 0%;
     opacity: 0.7;
-    animation: imageBlur 15s infinite;
+
 }
 
 @keyframes imageBlur {
@@ -1149,7 +1152,7 @@
     left: 0%;
     text-align: center;
     padding-top: 0.5%;
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-shadow: 1.5px 1.5px 2px black;
     background: rgba(255, 255, 255, 0.5);
     border: 1px solid;
@@ -1296,7 +1299,7 @@
     top: 74.8%;
     left: 0%;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-shadow: 1.5px 1.5px 2px black;
     background: rgba(255, 255, 255, 0.5);
     border: 1px solid;
@@ -1742,6 +1745,7 @@
 
 #reviewImage1 {
     height: 180%;
+    width: 120%;
     top: 0%;
     left: -16%;
 }
@@ -1760,6 +1764,7 @@
 
 #reviewImage4 {
     height: 140%;
+    width: 110%;
     top: 0%;
     left: 0%;
 }
@@ -1821,9 +1826,9 @@
 .reviewButtonContainers {
     position: absolute;
     height: 13%;
-    width: 15%;
+    width: 13%;
     top: 84.5%;
-    left: 42.5%;
+    left: 43.5%;
     border-radius: 100%;
     border: 1px solid;
     background: rgba(255, 255, 255, 0.2);

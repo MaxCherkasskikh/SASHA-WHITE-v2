@@ -15,13 +15,14 @@
     position: absolute;
     height: 68%;
     width: 100%;
-    top: 0%;
+    top: -2%;
     left: 0%;
     overflow: hidden;
     background: url(IMAGES/a4.JPG);
     background-attachment: fixed;
     background-size: 115%;
     background-position: 80% 0%;
+    backface-visibility: hidden;
     z-index: 1;
 }
 
@@ -32,7 +33,7 @@
     height: 71%;
     width: 100%;
     top: 29%;
-    left: %;
+    left: 0%;
     background: rgb(29, 29, 29);
     overflow: hidden;
     -webkit-clip-path: polygon(0 52.6%, 100% 0, 100% 100%, 0% 100%);
@@ -42,10 +43,10 @@
 
 #reelPicture {
     position: absolute;
-    height: 70%;
-    top: 34%;
-    left: -2.4%;
-    animation: imageTilt 25s linear infinite;
+    height: 80%;
+    top: 30%;
+    left: 0%;
+
 }
 
 @keyframes imageTilt {
@@ -70,8 +71,8 @@
     position: absolute;
     height: 5%;
     width: 50%;
-    top: 30%;
-    left: 45%;
+    top: 27%;
+    left: 48%;
     text-align: center;
     font-size: 1.8rem;
     animation: fontColorGradient 40s infinite;
@@ -79,12 +80,12 @@
 
 #pictureReelContainer {
     position: absolute;
-    height: 35%;
+    height: 41%;
     width: 66.3%;
-    top: 46%;
+    top: 42%;
     left: 17%;
     transform: rotate(45deg);
-    animation: containerTilt 25s linear infinite;
+
     z-index: 700;
 }
 
@@ -198,7 +199,7 @@
 
 .reelPictures {
     position: absolute;
-    height: 200%;
+    height: 210%;
     transform: rotate(-45deg);
 }
 
@@ -229,7 +230,7 @@
 
     #reelPic6 {
         top: -40%;
-        left: %;
+        left: -10%;
     }
 
     #reelPic7 {

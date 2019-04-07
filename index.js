@@ -22,11 +22,129 @@ $( "#menuButtonContainer" ).click(function() {
     
     $( "#menuLink7" ).toggleClass( "open closed" );
     
+    $( "#initialAboutContainer" ).toggleClass( "open closed" );
+    
+    $( "#sashaImageContainer" ).toggleClass( "open closed" );
+    
+    $( "#signatureContainer" ).toggleClass( "open closed" );
+    
     $( "#shufflePhrasesContainer" ).toggleClass( "open closed" );
     
     $( "#diamondContainer" ).toggleClass( "open closed" );
 
 });
+
+//------------------------------ DIAMOND ROTATION FUNCTION ----------------------------->
+
+window.addEventListener("DOMContentLoaded", rotateHex, true);
+    
+function rotateHex() {
+        
+    document.getElementById("sashaImageContainer1").style.transform = "rotateY(0deg)";
+    
+        document.getElementById("sashaImageContainer1").style.transformOrigin = "right";
+    
+            document.getElementById("sashaImageContainer1").style.transition = "1s";
+    
+                document.getElementById("sashaImageContainer1").style.transitionDelay = "0.8s";
+    
+    document.getElementById("sashaImageContainer2").style.transform = "rotateY(0deg)";
+    
+        document.getElementById("sashaImageContainer2").style.transformOrigin = "right";
+    
+            document.getElementById("sashaImageContainer2").style.transition = "1s";
+    
+                document.getElementById("sashaImageContainer2").style.transitionDelay = "0.4s";
+    
+    document.getElementById("sashaImageContainer3").style.transform = "rotateY(0deg)";
+    
+        document.getElementById("sashaImageContainer3").style.transformOrigin = "right";
+    
+            document.getElementById("sashaImageContainer3").style.transition = "1s";
+    
+                document.getElementById("sashaImageContainer3").style.transitionDelay = "0.4s";
+    
+    document.getElementById("sashaImageContainer4").style.transform = "rotateX(0deg)";
+    
+        document.getElementById("sashaImageContainer4").style.transformOrigin = "left";
+    
+            document.getElementById("sashaImageContainer4").style.transition = "1s";
+    
+                document.getElementById("sashaImageContainer4").style.transitionDelay = "0.8s";
+    
+    document.getElementById("sashaImageContainer5").style.transform = "rotateX(0deg)";
+    
+        document.getElementById("sashaImageContainer5").style.transformOrigin = "left";
+    
+            document.getElementById("sashaImageContainer5").style.transition = "1s";
+    
+                document.getElementById("sashaImageContainer5").style.transitionDelay = "1s";
+    
+    document.getElementById("sashaImageContainer6").style.transform = "rotateY(0deg)";
+    
+        document.getElementById("sashaImageContainer6").style.transformOrigin = "right";
+    
+            document.getElementById("sashaImageContainer6").style.transition = "1s";
+    
+                document.getElementById("sashaImageContainer6").style.transitionDelay = "0.6s";
+    
+    document.getElementById("sashaImageContainer7").style.transform = "rotateX(0deg)";
+    
+        document.getElementById("sashaImageContainer7").style.transformOrigin = "center";
+    
+            document.getElementById("sashaImageContainer7").style.transition = "1s";
+    
+                document.getElementById("sashaImageContainer7").style.transitionDelay = "0.2s";
+    
+    document.getElementById("sashaImageContainer8").style.transform = "rotateY(0deg)";
+    
+        document.getElementById("sashaImageContainer8").style.transformOrigin = "left";
+    
+            document.getElementById("sashaImageContainer8").style.transition = "1s";
+    
+                document.getElementById("sashaImageContainer8").style.transitionDelay = "0.6s";
+    
+    document.getElementById("sashaImageContainer9").style.transform = "rotateY(0deg)";
+    
+        document.getElementById("sashaImageContainer9").style.transformOrigin = "left";
+    
+            document.getElementById("sashaImageContainer9").style.transition = "1s";
+    
+                document.getElementById("sashaImageContainer9").style.transitionDelay = "1s";
+    
+    document.getElementById("sashaImageContainer10").style.transform = "rotateY(0deg)";
+    
+        document.getElementById("sashaImageContainer10").style.transformOrigin = "right";
+    
+            document.getElementById("sashaImageContainer10").style.transition = "1s";
+    
+                document.getElementById("sashaImageContainer10").style.transitionDelay = "0.8s";
+    
+    document.getElementById("sashaImageContainer11").style.transform = "rotateY(0deg)";
+    
+        document.getElementById("sashaImageContainer11").style.transformOrigin = "right";
+    
+            document.getElementById("sashaImageContainer11").style.transition = "1s";
+    
+                document.getElementById("sashaImageContainer11").style.transitionDelay = "0.4s";
+    
+    document.getElementById("sashaImageContainer12").style.transform = "rotateY(0deg)";
+    
+        document.getElementById("sashaImageContainer12").style.transformOrigin = "left";
+    
+            document.getElementById("sashaImageContainer12").style.transition = "1s";
+    
+                document.getElementById("sashaImageContainer12").style.transitionDelay = "0.4s";
+    
+    document.getElementById("sashaImageContainer13").style.transform = "rotateY(0deg)";
+    
+        document.getElementById("sashaImageContainer13").style.transformOrigin = "left";
+    
+            document.getElementById("sashaImageContainer13").style.transition = "1s";
+    
+                document.getElementById("sashaImageContainer13").style.transitionDelay = "0.8s";
+    
+};
 
 //------------------------- TEXT SHUFFLE EFFECT FUNCTIONS ------------------------>
 

@@ -290,7 +290,7 @@ input:-ms-input-placeholder {
 
 #menuButtonContainer {
     position: fixed;
-    height: 6.1%;
+    height: 7%;
     width: 11%;
     top: 1%;
     left: 87%;
@@ -601,35 +601,19 @@ input:-ms-input-placeholder {
 
 #homeContainer {
     position: absolute;
-    height: 170%;
+    height: 250%;
     width: 100%;
     top: 0%;
     left: 0%;
     overflow: hidden;
-}
-
-/* ------------------------------------ HEADER -------------------------------------- */
-
-#homeHeaderContainer {
-    position: absolute;
-    height: 70%;
-    width: 100%;
-    top: 0%;
-    left: 0%;
-    background: url(IMAGES/a3.jpg);
-    background-attachment: fixed;
-    background-size: 122%;
-    background-position: 50% 0%;
-    overflow: hidden;
-    z-index: 0;
 }
 
 #mainLogoContainer {
     position: absolute;
-    height: 5.8%;
+    height: 3.4%;
     width: 12.4%;
-    top: 1%;
-    left: 2%;
+    top: 0.1%;
+    left: 0.1%;
     animation: borderColorGradient 40s infinite;
 }
 
@@ -661,12 +645,461 @@ input:-ms-input-placeholder {
     }
 }
 
+/* ------------------------------------ HEADER -------------------------------------- */
+
+#homeHeaderContainer {
+    position: absolute;
+    height: 45%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    background: url(IMAGES/skies1.jpg);
+    background-attachment: fixed;
+    background-size: 122%;
+    background-position: 0% 0%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    z-index: 991;
+}
+
+#homeHeaderContainerVeil {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* ------------------------ SIGNATURE CONTAINER -------------------------- */
+
+#signatureContainer {
+    position: absolute;
+    height: 10%;
+    width: 90%;
+    top: 8%;
+    left: 5%;
+}
+
+#signatureContainer.open {
+    transform: rotateY(0deg);
+    transition: 0.2s;
+    transition-delay: 1.4s;
+}
+
+#signatureContainer.closed {
+    transform: rotateY(-90deg);
+    transition: 0.1s;
+}
+
+#blurredSignaturePar {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    font-family: 'Alex Brush', cursive;
+    animation: fontColorGradient 40s infinite;
+    filter: blur(4px);
+}
+
+#clearSignatureContainer {
+    position: absolute;
+    height: 90%;
+    width: 20%;
+    top: 0%;
+    left: 0%;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    overflow: hidden;
+    animation: borderColorGradient 40s infinite, signatureDivMove 5s linear infinite alternate;
+}
+
+#clearSignaturePar {
+    position: absolute;
+    height: 100%;
+    width: 500%;
+    top: 0%;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    background: rgba(0, 0, 0, 0.4);
+    font-family: 'Alex Brush', cursive;
+    animation: fontColorGradient 40s infinite, signatureParMove 5s linear infinite alternate;
+}
+
+@keyframes signatureDivMove {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: 80%;
+    }
+}
+
+@keyframes signatureParMove {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+/* ------------------------ IMAGE CONTAINER -------------------------- */
+
+#sashaImageContainer {
+    position: absolute;
+    height: 37%;
+    width: 100%;
+    top: 18%;
+    left: 0%;
+    z-index: 1000;
+}
+
+#sashaImageContainer.open {
+    transform: rotateY(0deg);
+    transition: 0.2s;
+    transition-delay: 1.4s;
+}
+
+#sashaImageContainer.closed {
+    transform: rotateY(-90deg);
+    transition: 0.1s;
+}
+
+.sashaImageContainers {
+    position: absolute;
+    height: 36%;
+    width: 19%;
+    background: black;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.sashaImages {
+    height: 400%;
+}
+
+#sashaImageContainer1 {
+    top: 3%;
+    left: 10.5%;
+    transform: rotateY(90deg);
+}
+
+    #sashaImage1 {
+        margin-top: 0%;
+        margin-left: -210%;
+    }
+
+#sashaImageContainer2 {
+    top: 3%;
+    left: 30.5%;
+    transform: rotateY(90deg);
+}
+
+    #sashaImage2 {
+        margin-top: 0%;
+        margin-left: -310%;
+    }
+
+#sashaImageContainer3 {
+    top: 3%;
+    left: 50.5%;
+    transform: rotateY(-90deg);
+}
+
+    #sashaImage3 {
+        margin-top: 0%;
+        margin-left: -410%;
+    }
+
+#sashaImageContainer4 {
+    top: 3%;
+    left: 70.5%;
+    transform: rotateY(-90deg);
+}
+
+    #sashaImage4 {
+        margin-top: 0%;
+        margin-left: -520%;
+    }
+
+#sashaImageContainer5 {
+    top: 32%;
+    left: 0.5%;
+    transform: rotateY(90deg);
+}
+
+    #sashaImage5 {
+        margin-top: -90%;
+        margin-left: -170%;
+    }
+
+#sashaImageContainer6 {
+    top: 32%;
+    left: 20.5%;
+    transform: rotateY(90deg);
+}
+
+    #sashaImage6 {
+        margin-top: -90%;
+        margin-left: -270%;
+    }
+
+#sashaImageContainer7 {
+    top: 32%;
+    left: 40.5%;
+    transform: rotateX(-90deg);
+}
+
+    #sashaImage7 {
+        margin-top: -90%;
+        margin-left: -370%;
+    }
+
+#sashaImageContainer8 {
+    top: 32%;
+    left: 60.5%;
+    transform: rotateY(-90deg);
+}
+
+    #sashaImage8 {
+        margin-top: -90%;
+        margin-left: -470%;
+    }
+
+#sashaImageContainer9 {
+    top: 32%;
+    left: 80.5%;
+    transform: rotateY(-90deg);
+}
+
+    #sashaImage9 {
+        margin-top: -90%;
+        margin-left: -570%;
+    }
+
+#sashaImageContainer10 {
+    top: 61%;
+    left: 10.5%;
+    transform: rotateY(90deg);
+}
+
+    #sashaImage10 {
+        margin-top: -190%;
+        margin-left: -210%;
+    }
+
+#sashaImageContainer11 {
+    top: 61%;
+    left: 30.5%;
+    transform: rotateY(90deg);
+}
+
+    #sashaImage11 {
+        margin-top: -190%;
+        margin-left: -310%;
+    }
+
+#sashaImageContainer12 {
+    top: 61%;
+    left: 50.5%;
+    transform: rotateY(-90deg);
+}
+
+    #sashaImage12 {
+        margin-top: -190%;
+        margin-left: -410%;
+    }
+
+#sashaImageContainer13 {
+    top: 61%;
+    left: 70.5%;
+    transform: rotateY(-90deg);
+}
+
+    #sashaImage13 {
+        margin-top: -190%;
+        margin-left: -520%;
+    }
+
+/* --------------------- INITIAL ABOUT SECTION ----------------------- */
+
+#initialAboutContainer {
+    position: absolute;
+    height: 14.8%;
+    width: 100%;
+    top: 58%;
+    left: 0%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#initialAboutPar {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: center;
+    font-size: 0.96rem;
+    text-shadow: 1px 1px 2px white;
+    animation: fontColorGradient 40s infinite;
+}
+
+#initialAboutContainer.open {
+    transform: rotateY(0deg);
+    transition: 0.2s;
+    transition-delay: 1.4s;
+}
+
+#initialAboutContainer.closed {
+    transform: rotateY(-90deg);
+    transition: 0.1s;
+}
+
+/* ------------------------------------ BREAK -------------------------------------- */
+
+#homeBreakContainer {
+    position: absolute;
+    height: 34%;
+    width: 100%;
+    top: 33%;
+    left: 0%;
+    background: rgb(29, 29, 29);
+    -webkit-clip-path: polygon(50% 20%, 100% 0, 100% 100%, 50% 80%, 0 100%, 0 0);
+    clip-path: polygon(50% 20%, 100% 0, 100% 100%, 50% 80%, 0 100%, 0 0);
+    z-index: 999;
+}
+
+#homeBreakVeil {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    background: linear-gradient(rgb(29, 29, 29), rgba(29, 29, 29, 0.5));
+    z-index: 12;
+}
+
+#homeBreakRoadContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    background: url(IMAGES/road.gif);
+    background-size: 240%; 240%;
+    background-position: 40% 50%;
+    background-repeat: no-repeat;
+    z-index: 11;
+}
+
+#homeBreakBorder {
+    position: absolute;
+    height: 32%;
+    width: 110%;
+    top: 34%;
+    left: -5%;
+    border: 4px double;
+    animation: borderColorGradient 40s infinite;
+    z-index: 1000;
+}
+
+#homeBreakInfoContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 7.5%;
+    left: 0%;
+    background: rgba(29, 29, 29, 0.7);
+    z-index: 12;
+}
+
+#aboutSashaPhrases {
+    position: absolute;
+    height: 8%;
+    width: 98%;
+    top: 40%;
+    left: 1%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px white;
+    border: none;
+    background: none;
+    animation: fontColorGradient 50s infinite;
+    overflow: hidden;
+    transition: 0.8s;
+    z-index: 1000;
+}
+
+#aboutSashaButton {
+    position: absolute;
+    height: 8%;
+    width: 50%;
+    top: 61%;
+    left: 25%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 1.5px 1.5px 2px white;
+    box-shadow: 1.3px 1.3px 5px white;
+    border: 1px solid;
+    animation: borderColorGradient 40s infinite, fontColorGradient 40s infinite, backgroundColorGradient 40s infinite;
+}
+
+/* ------------------------------------ DUBAI -------------------------------------- */
+
+#homeDubaiContainer {
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    top: 60%;
+    left: 0%;
+    overflow: hidden;
+    z-index: 990;
+}
+
+#homeDubaiContainerVeil {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+#dubaiImageContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    overflow: hidden;
+}
+
+#dubaiImage {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+
 #shufflePhrasesContainer {
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0%;
     left: 0%;
+    z-index: 1000;
 }
 
     #shufflePhrasesContainer.open {
@@ -685,11 +1118,11 @@ input:-ms-input-placeholder {
     position: absolute;
     height: 4%;
     width: 96%;
-    top: 8%;
+    top: 16%;
     left: 2%;
     font-size: 1.3rem;
     text-align: center;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px white;
     animation: fontColorGradient 40s infinite;
     overflow: hidden;
 }
@@ -698,11 +1131,11 @@ input:-ms-input-placeholder {
     position: absolute;
     height: 4%;
     width: 96%;
-    top: 12%;
+    top: 24%;
     left: 2%;
     font-size: 1.3rem;
     text-align: center;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px white;
     animation: fontColorGradient 40s infinite;
     overflow: hidden;
 }
@@ -711,11 +1144,11 @@ input:-ms-input-placeholder {
     position: absolute;
     height: 4%;
     width: 96%;
-    top: 16%;
+    top: 32%;
     left: 2%;
     font-size: 1.3rem;
     text-align: center;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px white;
     animation: fontColorGradient 40s infinite;
     overflow: hidden;
 }
@@ -724,11 +1157,11 @@ input:-ms-input-placeholder {
     position: absolute;
     height: 4%;
     width: 96%;
-    top: 20%;
+    top: 40%;
     left: 2%;
     font-size: 1.3rem;
     text-align: center;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px white;
     animation: fontColorGradient 40s infinite;
     overflow: hidden;
 }
@@ -737,11 +1170,11 @@ input:-ms-input-placeholder {
     position: absolute;
     height: 4%;
     width: 96%;
-    top: 24%;
+    top: 48%;
     left: 2%;
     font-size: 1.3rem;
     text-align: center;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px white;
     animation: fontColorGradient 40s infinite;
     overflow: hidden;
 }
@@ -750,11 +1183,11 @@ input:-ms-input-placeholder {
     position: absolute;
     height: 4%;
     width: 96%;
-    top: 28%;
+    top: 56%;
     left: 2%;
     font-size: 1.3rem;
     text-align: center;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px white;
     animation: fontColorGradient 40s infinite;
     overflow: hidden;
 }
@@ -763,11 +1196,11 @@ input:-ms-input-placeholder {
     position: absolute;
     height: 4%;
     width: 96%;
-    top: 32%;
+    top: 64%;
     left: 2%;
     font-size: 1.3rem;
     text-align: center;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px white;
     animation: fontColorGradient 40s infinite;
     overflow: hidden;
 }
@@ -776,11 +1209,11 @@ input:-ms-input-placeholder {
     position: absolute;
     height: 4%;
     width: 96%;
-    top: 36%;
+    top: 72%;
     left: 2%;
     font-size: 1.3rem;
     text-align: center;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px white;
     animation: fontColorGradient 40s infinite;
     overflow: hidden;
 }
@@ -789,11 +1222,11 @@ input:-ms-input-placeholder {
     position: absolute;
     height: 4%;
     width: 96%;
-    top: 40%;
+    top: 80%;
     left: 2%;
     font-size: 1.3rem;
     text-align: center;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px white;
     animation: fontColorGradient 40s infinite;
     overflow: hidden;
 }
@@ -802,114 +1235,20 @@ input:-ms-input-placeholder {
     position: absolute;
     height: 4%;
     width: 96%;
-    top: 44%;
+    top: 88%;
     left: 2%;
     font-size: 1.3rem;
     text-align: center;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px white;
     animation: fontColorGradient 40s infinite;
     overflow: hidden;
-}
-
-/* ------------------------------------ CLOSER -------------------------------------- */
-
-#homeCloserContainer {
-    position: absolute;
-    height: 70%;
-    width: 100%;
-    top: 35%;
-    left: 0%;
-    background: rgb(29, 29, 29);
-    overflow: hidden;
-    -webkit-clip-path: polygon(0 34%, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(0 34%, 100% 0, 100% 100%, 0% 100%);
-    z-index: 10;
-}
-
-#homeCloserVeil {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0%;
-    left: 0%;
-    background: linear-gradient(rgb(29, 29, 29), rgba(29, 29, 29, 0.5));
-    z-index: 12;
-}
-
-#homeCloserRoadContainer {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 8%;
-    left: 0%;
-    background: url(IMAGES/road.gif);
-    background-size: 240%; 240%;
-    background-position: 40% 50%;
-    background-repeat: no-repeat;
-    z-index: 11;
-}
-
-#homeCloserBorder {
-    position: absolute;
-    height: 22.5%;
-    width: 110%;
-    top: 47%;
-    left: -5%;
-    border: 4px double;
-    animation: borderColorGradient 40s infinite;
-    z-index: 1000;
-}
-
-#homeCloserInfoContainer {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 7.5%;
-    left: 0%;
-    background: rgba(29, 29, 29, 0.7);
-    z-index: 12;
-}
-
-#aboutSashaPhrases {
-    position: absolute;
-    height: 5%;
-    width: 98%;
-    top: 48%;
-    left: 1%;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.6);
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: bolder;
-    text-shadow: 2px 2px 3px white;
-    border: none;
-    background: none;
-    animation: fontColorGradient 50s infinite;
-    overflow: hidden;
-    transition: 0.8s;
-    z-index: 999;
-}
-
-#aboutSashaButton {
-    position: absolute;
-    height: 5%;
-    width: 50%;
-    top: 70%;
-    left: 25%;
-    font-size: 1.5rem;
-    border-radius: 10px;
-    text-align: center;
-    text-shadow: 1.5px 1.5px 2px white;
-    box-shadow: 1.3px 1.3px 5px white;
-    border: 1px solid;
-    animation: borderColorGradient 40s infinite, fontColorGradient 40s infinite, backgroundColorGradient 40s infinite;
 }
 
 /* ------------------------------------ THE END -------------------------------------- */
 
 @media only screen and (orientation: landscape) {
     #homeContainer {
-        height: 500%;
+        height: 750%;
     }
     
     #homeHeaderContainer {
@@ -1077,7 +1416,197 @@ input:-ms-input-placeholder {
             transition-delay: 0s;
         }
     
+    #signatureContainer {
+        position: absolute;
+        height: 10%;
+        width: 90%;
+        top: 8%;
+        left: 5%;
+    }
+
+    #signatureContainer.open {
+        transform: rotateY(0deg);
+        transition: 0.2s;
+        transition-delay: 1.4s;
+    }
+
+    #signatureContainer.closed {
+        transform: rotateY(-90deg);
+        transition: 0.1s;
+    }
+
+    #blurredSignaturePar {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        text-align: center;
+        font-size: 5rem;
+        font-weight: 700;
+        letter-spacing: 4px;
+        font-family: 'Alex Brush', cursive;
+        animation: fontColorGradient 40s infinite;
+        filter: blur(4px);
+    }
+
+    #clearSignatureContainer {
+        position: absolute;
+        height: 90%;
+        width: 20%;
+        top: 0%;
+        left: 0%;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        overflow: hidden;
+        animation: borderColorGradient 40s infinite, signatureDivMove 5s linear infinite alternate;
+    }
+
+    #clearSignaturePar {
+        position: absolute;
+        height: 100%;
+        width: 500%;
+        top: 0%;
+        text-align: center;
+        font-size: 5rem;
+        font-weight: 700;
+        letter-spacing: 4px;
+        background: rgba(0, 0, 0, 0.4);
+        font-family: 'Alex Brush', cursive;
+        animation: fontColorGradient 40s infinite, signatureParMove 5s linear infinite alternate;
+    }
+
+    @keyframes signatureDivMove {
+        0% {
+            left: 0%;
+        }
+        100% {
+            left: 80%;
+        }
+    }
+
+    @keyframes signatureParMove {
+        0% {
+            left: 0%;
+        }
+        100% {
+            left: -400%;
+        }
+    }
+    
+    #initialAboutContainer {
+        position: absolute;
+        height: 15%;
+        width: 96%;
+        top: 58%;
+        left: 2%;
+        background: rgba(0, 0, 0, 0.7);
+        border: 1px solid;
+        border-radius: 5px;
+        animation: borderColorGradient 40s infinite;
+    }
+
+    #initialAboutPar {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        padding-left: 3%;
+        padding-right: 3%;
+        text-align: center;
+        font-size: 1.9rem;
+        text-shadow: 1px 1px 2px white;
+        animation: fontColorGradient 40s infinite;
+    }
+
+    #initialAboutContainer.open {
+        transform: rotateY(0deg);
+        transition: 0.2s;
+        transition-delay: 1.4s;
+    }
+
+    #initialAboutContainer.closed {
+        transform: rotateY(-90deg);
+        transition: 0.1s;
+    }
+    
     #aboutSashaButton {
         font-size: 2.7rem;
+    }
+    
+    #dubaiImageContainer {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        overflow: hidden;
+    }
+
+    #dubaiImage {
+        position: fixed;
+        height: 200%;
+        width: 100%;
+        top: -26%;
+        left: 0%;
+    }
+    
+    .random1 {
+        height: 7%;
+    }
+    
+    .random2 {
+        height: 7%;
+    }
+    
+    .random3 {
+        height: 7%;
+    }
+    
+    .random4 {
+        height: 7%;
+    }
+    
+    .random5 {
+        height: 7%;
+    }
+    
+    .random6 {
+        height: 7%;
+    }
+    
+    .random7 {
+        height: 7%;
+    }
+    
+    .random8 {
+        height: 7%;
+    }
+    
+    .random9 {
+        height: 7%;
+    }
+    
+    .random10 {
+        height: 7%;
+    }
+    
+    #sashaImage7 {
+        margin-left: -376%;
+    }
+    
+    #sashaImage9 {
+        height: 400%;
+        width: 700%;
+        margin-left: -600%;
+    }
+    
+    #sashaImage11 {
+        margin-left: -320%;
+    }
+    
+    #sashaImage12 {
+        margin-left: -424%;
     }
 }
